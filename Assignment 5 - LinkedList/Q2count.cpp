@@ -39,7 +39,7 @@ int countAndDelete(Node*& head, int key) {
     // Delete key occurrences in the rest of the list
     Node* current = head;
     Node* prev = nullptr;
-    while (current) {
+    while (current != NULL) {
         if (current->data == key) {
             count++;
             prev->next = current->next;

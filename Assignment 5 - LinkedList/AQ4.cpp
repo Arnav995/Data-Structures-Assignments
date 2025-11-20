@@ -21,7 +21,7 @@ Node* rotateLeft(Node* head, int k) {
     if (k == 0) return head;
 
     tail->next = head; // make circular
-    for (int i = 0; i < k; i++) tail = tail->next;
+    for (int i = 0; i < k; i++)tail = tail->next;
     head = tail->next;
     tail->next = NULL;
     return head;
